@@ -1,0 +1,323 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="cls_4_reshape_1/Reshape" out_port_id="0"/>
+		<IR id="56" name="cls_4_reshape_1/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="loc_0_reshape_1/Reshape/shape" out_port_id="0"/>
+		<IR id="63" name="loc_0_reshape_1/Reshape/shape/Concat_/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="loc_1_insert_conv2d_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="65" name="loc_1_insert_conv2d_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="loc_2_reshape_1/Reshape/shape" out_port_id="0"/>
+		<IR id="75" name="loc_2_reshape_1/Reshape/shape/Concat_/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="data_1" out_port_id="0"/>
+		<IR id="0" name="data_1" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="conv2d_0_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="1" name="conv2d_0_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv2d_0_activation_1/Relu" out_port_id="0"/>
+		<IR id="2" name="conv2d_0_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="maxpool2d_0_1/MaxPool" out_port_id="0"/>
+		<IR id="3" name="maxpool2d_0_1/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_1_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="4" name="conv2d_1_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv2d_1_activation_1/Relu" out_port_id="0"/>
+		<IR id="5" name="conv2d_1_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="maxpool2d_1_1/MaxPool" out_port_id="0"/>
+		<IR id="6" name="maxpool2d_1_1/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_2_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="7" name="conv2d_2_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv2d_2_activation_1/Relu" out_port_id="0"/>
+		<IR id="8" name="conv2d_2_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="maxpool2d_2_1/MaxPool" out_port_id="0"/>
+		<IR id="9" name="maxpool2d_2_1/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_3_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="10" name="conv2d_3_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv2d_3_activation_1/Relu" out_port_id="0"/>
+		<IR id="11" name="conv2d_3_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_0_insert_conv2d_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="12" name="cls_0_insert_conv2d_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="cls_0_insert_conv2d_activation_1/Relu" out_port_id="0"/>
+		<IR id="13" name="cls_0_insert_conv2d_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_0_conv_1/BiasAdd" out_port_id="0"/>
+		<IR id="14" name="cls_0_conv_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="cls_0_reshape_1/Reshape/shape" out_port_id="0"/>
+		<IR id="16" name="cls_0_reshape_1/Reshape/shape/Concat_/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_0_reshape_1/Reshape" out_port_id="0"/>
+		<IR id="17" name="cls_0_reshape_1/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="cls_0_activation_1/Sigmoid" out_port_id="0"/>
+		<IR id="18" name="cls_0_activation_1/Sigmoid" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_4_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="20" name="conv2d_4_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv2d_4_activation_1/Relu" out_port_id="0"/>
+		<IR id="21" name="conv2d_4_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_1_insert_conv2d_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="22" name="cls_1_insert_conv2d_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="cls_1_insert_conv2d_activation_1/Relu" out_port_id="0"/>
+		<IR id="23" name="cls_1_insert_conv2d_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_1_conv_1/BiasAdd" out_port_id="0"/>
+		<IR id="24" name="cls_1_conv_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="cls_1_reshape_1/Reshape/shape" out_port_id="0"/>
+		<IR id="26" name="cls_1_reshape_1/Reshape/shape/Concat_/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_1_reshape_1/Reshape" out_port_id="0"/>
+		<IR id="27" name="cls_1_reshape_1/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="cls_1_activation_1/Sigmoid" out_port_id="0"/>
+		<IR id="28" name="cls_1_activation_1/Sigmoid" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="maxpool2d_4_1/MaxPool" out_port_id="0"/>
+		<IR id="29" name="maxpool2d_4_1/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_5_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="30" name="conv2d_5_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="cls_2_insert_conv2d_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="32" name="cls_2_insert_conv2d_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="cls_2_insert_conv2d_activation_1/Relu" out_port_id="0"/>
+		<IR id="33" name="cls_2_insert_conv2d_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_2_conv_1/BiasAdd" out_port_id="0"/>
+		<IR id="34" name="cls_2_conv_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="cls_2_reshape_1/Reshape/shape" out_port_id="0"/>
+		<IR id="36" name="cls_2_reshape_1/Reshape/shape/Concat_/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_2_reshape_1/Reshape" out_port_id="0"/>
+		<IR id="37" name="cls_2_reshape_1/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="cls_2_activation_1/Sigmoid" out_port_id="0"/>
+		<IR id="38" name="cls_2_activation_1/Sigmoid" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="maxpool2d_5_1/MaxPool" out_port_id="0"/>
+		<IR id="39" name="maxpool2d_5_1/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_6_activation_1/Relu" out_port_id="0"/>
+		<IR id="41" name="conv2d_6_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_3_insert_conv2d_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="42" name="cls_3_insert_conv2d_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="cls_3_insert_conv2d_activation_1/Relu" out_port_id="0"/>
+		<IR id="43" name="cls_3_insert_conv2d_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_3_conv_1/BiasAdd" out_port_id="0"/>
+		<IR id="44" name="cls_3_conv_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="cls_3_reshape_1/Reshape/shape" out_port_id="0"/>
+		<IR id="46" name="cls_3_reshape_1/Reshape/shape/Concat_/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_3_reshape_1/Reshape" out_port_id="0"/>
+		<IR id="47" name="cls_3_reshape_1/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="cls_3_activation_1/Sigmoid" out_port_id="0"/>
+		<IR id="48" name="cls_3_activation_1/Sigmoid" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_7_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="49" name="conv2d_7_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv2d_7_activation_1/Relu" out_port_id="0"/>
+		<IR id="50" name="conv2d_7_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_4_insert_conv2d_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="51" name="cls_4_insert_conv2d_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="cls_4_insert_conv2d_activation_1/Relu" out_port_id="0"/>
+		<IR id="52" name="cls_4_insert_conv2d_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_4_conv_1/BiasAdd" out_port_id="0"/>
+		<IR id="53" name="cls_4_conv_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="cls_4_reshape_1/Reshape/shape" out_port_id="0"/>
+		<IR id="55" name="cls_4_reshape_1/Reshape/shape/Concat_/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_4_activation_1/Sigmoid" out_port_id="0"/>
+		<IR id="57" name="cls_4_activation_1/Sigmoid" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="cls_branch_concat_1/concat" out_port_id="0"/>
+		<IR id="58" name="cls_branch_concat_1/concat" out_port_id="5"/>
+	</map>
+	<map>
+		<framework name="loc_0_insert_conv2d_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="59" name="loc_0_insert_conv2d_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="loc_0_insert_conv2d_activation_1/Relu" out_port_id="0"/>
+		<IR id="60" name="loc_0_insert_conv2d_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="loc_0_conv_1/BiasAdd" out_port_id="0"/>
+		<IR id="61" name="loc_0_conv_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="loc_0_reshape_1/Reshape" out_port_id="0"/>
+		<IR id="64" name="loc_0_reshape_1/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="loc_1_insert_conv2d_activation_1/Relu" out_port_id="0"/>
+		<IR id="66" name="loc_1_insert_conv2d_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="loc_1_conv_1/BiasAdd" out_port_id="0"/>
+		<IR id="67" name="loc_1_conv_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="loc_1_reshape_1/Reshape/shape" out_port_id="0"/>
+		<IR id="69" name="loc_1_reshape_1/Reshape/shape/Concat_/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="loc_1_reshape_1/Reshape" out_port_id="0"/>
+		<IR id="70" name="loc_1_reshape_1/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="loc_2_insert_conv2d_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="71" name="loc_2_insert_conv2d_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="loc_2_insert_conv2d_activation_1/Relu" out_port_id="0"/>
+		<IR id="72" name="loc_2_insert_conv2d_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="loc_2_conv_1/BiasAdd" out_port_id="0"/>
+		<IR id="73" name="loc_2_conv_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="loc_2_reshape_1/Reshape" out_port_id="0"/>
+		<IR id="76" name="loc_2_reshape_1/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="loc_3_insert_conv2d_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="77" name="loc_3_insert_conv2d_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="loc_3_insert_conv2d_activation_1/Relu" out_port_id="0"/>
+		<IR id="78" name="loc_3_insert_conv2d_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="loc_3_conv_1/BiasAdd" out_port_id="0"/>
+		<IR id="79" name="loc_3_conv_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="loc_3_reshape_1/Reshape/shape" out_port_id="0"/>
+		<IR id="81" name="loc_3_reshape_1/Reshape/shape/Concat_/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="loc_3_reshape_1/Reshape" out_port_id="0"/>
+		<IR id="82" name="loc_3_reshape_1/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="loc_4_insert_conv2d_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="83" name="loc_4_insert_conv2d_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="loc_4_insert_conv2d_activation_1/Relu" out_port_id="0"/>
+		<IR id="84" name="loc_4_insert_conv2d_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="loc_4_conv_1/BiasAdd" out_port_id="0"/>
+		<IR id="85" name="loc_4_conv_1/convolution" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="loc_4_reshape_1/Reshape/shape" out_port_id="0"/>
+		<IR id="87" name="loc_4_reshape_1/Reshape/shape/Concat_/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="loc_4_reshape_1/Reshape" out_port_id="0"/>
+		<IR id="88" name="loc_4_reshape_1/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="loc_branch_concat_1/concat" out_port_id="0"/>
+		<IR id="89" name="loc_branch_concat_1/concat" out_port_id="5"/>
+	</map>
+	<map>
+		<framework name="conv2d_5_activation_1/Relu" out_port_id="0"/>
+		<IR id="31" name="conv2d_5_activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="maxpool2d_3_1/MaxPool" out_port_id="0"/>
+		<IR id="19" name="maxpool2d_3_1/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_6_bn_1/FusedBatchNorm_1" out_port_id="0"/>
+		<IR id="40" name="conv2d_6_1/convolution" out_port_id="3"/>
+	</map>
+</mapping>

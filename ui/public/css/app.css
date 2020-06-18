@@ -1,0 +1,72 @@
+.warning{
+	background-color:#FFD700;
+	position:absolute;
+	left:100px;
+	top:780px;
+	width:480px;
+	height:50px;
+	display:flex;
+	font-weight:100;
+	font-style:normal;
+}
+
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+a{
+	color: black;
+}
+
+a:hover{
+	text-decoration:underline; 
+}
+
+
+.home{
+	position:relative;
+	left: 50%;
+	margin-left:1000px;
+	margin-right:auto;
+}
+
+.warning-title{
+	margin-top:1%;	
+	margin-bottom:0%;
+	margin-left:5%;
+	display:flex;
+	font-family:'MuktaMahee-Medium', 'Mukta Mahee Medium', 'Mukta Mahee', sans-serif;
+	font-weight:100;
+	font-style:normal;
+	font-size:20px;
+	color:#F2F2F2;
+	text-align:right;
+}
+
+
+.warning-content{
+	margin-top:-7%;	
+	margin-bottom:0%;
+	display:flex;
+	font-family:'MuktaMahee-Regular', 'Mukta Mahee Regular', 'Mukta Mahee', sans-serif;
+	font-weight:100;
+	font-style:normal;
+	font-size:15px;
+	color:#F2F2F2;
+	text-align:right;	
+}
+
+.button-limit{
+	position:relative;
+	margin-left:34%;
+}
+
+.real-time{
+	height:4%;
+	width:2%;
+}
+
+
+

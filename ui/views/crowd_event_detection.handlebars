@@ -1,0 +1,249 @@
+
+<div id="base" class="">
+
+    <!-- card background (Rectangle) -->
+    <div id="u134" class="ax_default shape disabled" data-label="card background">
+        <img id="u134_img" class="img " src="public/img/crow_event_detection/card_background_u134.svg"/>
+        <div id="u134_text" class="text " style="display:none; visibility: hidden">
+        <p></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Image) -->
+    <div id="u136" class="ax_default image">
+        <img id="u136_img" class="img " src="public/img/welcome_page/u86.png"/>
+        <div id="u136_text" class="text " style="display:none; visibility: hidden">
+        <p></p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u137" class="ax_default display_1" data-label="display 1">
+        <div id="u137_div" class=""></div>
+        <div id="u137_text" class="text ">
+        <p><span>Analytics</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u138" class="ax_default box_1">
+        <img id="u138_img" class="img " src="public/img/welcome_page/u120.svg"/>
+        <div id="u138_text" class="text " style="display:none; visibility: hidden">
+        <p></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Image) -->
+    <div id="u139" class="ax_default image">
+        
+        <script src="public/js/video.min.js"></script>
+        <script src="public/js/video.js"></script>
+        <script src="public/js/videojs-contrib-hls.min.js"></script>
+        <script src="https://unpkg.com/videojs-flash/dist/videojs-flash.js"></script>
+
+        <video id="gprdimage" width=600 height=300 class="video-js vjs-default-skin" controls poster= 'public/img/crow_event_detection/u139.png'>
+            <source
+                src="http://localhost:8090/crowd/stream.m3u8"
+                type="application/x-mpegURL">
+        </video>
+        <script>
+            var player = videojs('gprdimage');
+            player.play();
+        </script>
+        <p></p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u140" class="ax_default display_1" data-label="display 1">
+        <div id="u140_div" class=""></div>
+        <div id="u140_text" class="text ">
+        <p><span>Video details</span></p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u141" class="ax_default display_1" data-label="display 1">
+        <div id="u141_div" class=""></div>
+        <div id="u141_text" class="text ">
+        <p><span>FPS</span></p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u142" class="ax_default display_1" data-label="display 1">
+        <div id="u142_div" class=""></div>
+        <div id="u142_text" class="text ">
+        <p><span>Resolution</span></p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u143" class="ax_default display_1" data-label="display 1">
+        <div id="u143_div" class=""></div>
+        <div id="u143_text" class="text ">
+        <p><span>Inference Time</span></p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u144" class="ax_default display_1" data-label="display 1">
+        <div id="u144_div" class=""></div>
+        <div id="u144_text" class="text ">
+        <p><span>CROWD EVENT DETECTION</span></p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u145" class="ax_default display_1" data-label="display 1">
+        <div id="u145_div" class=""></div>
+        <div id="u145_text" class="text ">
+        <p><span>People Count</span></p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u146" class="ax_default display_1" data-label="display 1">
+        <div id="u146_div" class=""></div>
+        <div id="u146_text" class="text ">
+        <p id= 'numberPeople' align="center"> 16 </p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u147" class="ax_default display_1" data-label="display 1">
+        <div id="u147_div" class=""></div>
+        <div id="u147_text" class="text ">
+        <p><span>Last Alert</span></p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u148" class="ax_default display_1" data-label="display 1">
+        <div id="u148_div" class=""></div>
+        <div id="u148_text" class="text ">
+        <p id= 'lastAlert' align="center"> DD:MM:YY:HH:MM:SS </p>
+        </div>
+    </div>
+
+    <div class="card warning">
+        <div class="center card-title">
+            <p class="warning-title"> <b> WARNING </b></p>
+        </div>
+        <div class="card-content warning-content">       
+                <p> <b>Limit of people exceeded </b> </p>                                 
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u149" class="ax_default display_1" data-label="display 1">
+        <div id="u149_div" class=""></div>
+        <div id="u149_text" class="text ">
+        <p><span>People Count Alert</span></p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u150" class="ax_default display_1" data-label="display 1">
+        <div id="u150_div" class=""></div>
+        <div id="u150_text" class="text ">
+            <input placeholder="Limit of people" id="limit_people" type="number" value ="5" min="1" max="1000" step="1" class="validate">   
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u151" class="ax_default display_1" data-label="display 1">
+        <div id="u151_div" class=""></div>
+        <div id="u151_text" class="text ">
+        <p><span>Thresholds</span></p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u152" class="ax_default display_1" data-label="display 1">
+        <div id="u152_div" class=""></div>
+        <div id="u152_text" class="text ">
+        <p id= 'fps'>0</p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u153" class="ax_default display_1" data-label="display 1">
+        <div id="u153_div" class=""></div>
+        <div id="u153_text" class="text ">
+        <p id= 'resolucion'>0x0</p>
+        </div>
+    </div>
+
+    <!-- display 1 (Rectangle) -->
+    <div id="u154" class="ax_default display_1" data-label="display 1">
+        <div id="u154_div" class=""></div>
+        <div id="u154_text" class="text ">
+        <p id= 'inferencia'>0ms</p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u155" class="ax_default box_1">
+        <img id="u155_img" class="img " src="public/img/crow_event_detection/u155.svg"/>
+        <div id="u155_text" class="text " style="display:none; visibility: hidden">
+        <p></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u156" class="ax_default box_1">
+        <img id="u156_img" class="img " src="public/img/crow_event_detection/u155.svg"/>
+        <div id="u156_text" class="text " style="display:none; visibility: hidden">
+        <p></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u157" class="ax_default box_1">
+        <img id="u157_img" class="img " src="public/img/crow_event_detection/u157.svg"/>
+        <div id="u157_text" class="text " style="display:none; visibility: hidden">
+        <p></p>
+        </div>
+    </div>
+
+    <!-- btn primary (Rectangle) -->
+    <div id="u167" class="ax_default shape" data-label="btn primary">
+        <img id="u167_img" class="img " src="public/img/crow_event_detection/btn_primary_u167.svg"/>
+        <div id="u167_text" class="text ">
+        <p><span>One</span><span> Click</span></p>
+        </div>
+    </div>
+
+    <!-- btn primary (Rectangle) -->
+    <div id="u168" class="ax_default shape" data-label="btn primary">
+        <img id="u168_img" class="img " src="public/img/crow_event_detection/btn_primary_u168.svg"/>
+        <div id="u168_text" class="text ">
+        <p><span>One</span><span> Place</span></p>
+        </div>
+    </div>
+
+    <!-- btn primary (Rectangle) -->
+    <div id="u169" class="ax_default shape" data-label="btn primary">
+        <img id="u169_img" class="img " src="public/img/crow_event_detection/btn_primary_u169.svg"/>
+        <div id="u169_text" class="text ">
+        <p><span>One</span><span> Integration</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u170" class="ax_default box_1">
+        <img id="u170_img" class="img " src="public/img/crow_event_detection/u170.svg"/>
+        <div id="u170_text" class="text " style="display:none; visibility: hidden">
+        <p></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u171" class="ax_default box_1">
+        <img id="u171_img" class="img " src="public/img/crow_event_detection/u170.svg"/>
+        <div id="u171_text" class="text " style="display:none; visibility: hidden">
+        <p></p>
+        </div>
+    </div>
+</div>

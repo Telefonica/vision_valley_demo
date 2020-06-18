@@ -1,0 +1,11 @@
+module.exports = {
+
+    mqtt: {
+        backingStore: {
+
+        },
+        port: 1884,
+        host: 'localhost',
+        http: {port: 3000, bundle: true, static: './'}  
+    }
+}

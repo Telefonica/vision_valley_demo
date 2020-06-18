@@ -1,0 +1,33 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bea",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "http": "0.0.0",
+    "method-override": "^3.0.0",
+    "moment": "^2.26.0",
+    "morgan": "^1.10.0",
+    "mosca": "^2.8.3",
+    "mqtt": "^4.1.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-sort-class-members": "^1.7.0",
+    "video.js": "^7.8.2",
+    "videojs-contrib-hls": "^5.15.0"
+  }
+}

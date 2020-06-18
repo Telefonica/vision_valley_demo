@@ -1,0 +1,436 @@
+/* Custom Stylesheet */
+@font-face { 
+  font-family: 'TelefonicaWebRegular';
+  src: url('fonts/Regular/TelefonicaWeb-Regular.woff') format('woff');
+}
+
+@font-face { 
+  font-family: 'MuktaMahee-Regular';
+  src: url('fonts/muktamahee-regular-webfont.woff2') format('woff2'),
+       url('fonts/muktamahee-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'MuktaMahee-Light';
+  src: url('fonts/muktamahee-light-webfont.woff2') format('woff2'),
+       url('fonts/muktamahee-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'MuktaMahee-ExtraLight';
+  src: url('fonts/muktamahee-extralight-webfont.woff2') format('woff2'),
+       url('fonts/muktamahee-extralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'MuktaMahee-Medium';
+  src: url('fonts/muktamahee-medium-webfont.woff2') format('woff2'),
+       url('fonts/muktamahee-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'MuktaMahee-Bold';
+  src: url('fonts/muktamahee-bold-webfont.woff2') format('woff2'),
+       url('fonts/muktamahee-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'MuktaMahee-ExtraBold';
+  src: url('fonts/muktamahee-extrabold-webfont.woff2') format('woff2'),
+       url('fonts/muktamahee-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'MuktaMahee-SemiBold';
+  src: url('fonts/muktamahee-semibold-webfront.woff2') format('woff2') 
+       url('fonts/muktamahee-semibold-webfront.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* footer STICKY */
+body {
+  font-family: MuktaMaheeRegular;
+  display: flex;
+  position:absolute;
+  min-height: 100vh;
+  flex-direction: column;
+  margin:0px;
+  padding: 0px;
+  width:auto;
+  overflow-y: scroll;
+}
+
+main {
+  flex: 1 0 auto;
+  position:absolute;
+  margin:0px;
+  width:auto;
+  padding: 0px;
+}
+
+div.scroll_vertical{
+  border: 1px solid #666;
+  background-color: #ccc;
+  padding: 8px
+}
+
+/* end footer STICKY */
+
+.corporativo{
+  background-color : #002F44; /*#004252;*/  
+}
+.corporativoalt{
+ background-color: #4BC6E1
+}
+.corporativo-text {
+  color : #002F44;
+}
+.corporativoalt-text{
+  color: #4BC6E1;
+}
+.corporativoborder{
+  border : 3px solid #4BC6E1;
+}
+
+.corporativoalt2{
+  background-color: #9E9FA3;
+}
+
+corporativoalt2-text{
+  color: #9E9FA3;
+}
+
+.corporativorestaltado{
+  background-color: #EF7D19;
+}
+
+.corporativorestaltado-text{
+  color: #EF7D19;
+}
+
+.corporativo-big{
+  font-size : 32px;
+}
+ 
+.corporativo-small{
+  font-size : 12px;
+}
+ 
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.logo{
+  width:'120px'
+}
+
+  .responsive-gprd{
+    width: 100%;
+    height: 80%;
+    object-fit: fill;
+  }
+
+
+.directolabel{
+  position: absolute;
+  bottom: 2%;
+  left: 34%;
+}
+
+
+.directolabelV{
+  position: absolute;
+  top: 48%;
+  right: 1%;
+}
+
+.directolabelData{
+  padding: 2px 25px 2px 25px;
+}
+
+
+.TVStreaming{
+  margin:0px !important;
+  padding:0px !important;
+  height: 96vh !important;
+}
+
+
+.TVStreamingV{
+  margin:0px !important;
+  padding:0px !important;
+  height: 40vh !important;
+}
+
+
+.personaCard{
+    margin-top: 100px  !important; 
+}
+
+.userimagedetected{
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+
+
+
+.DetectedPeople{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    height: 52vh;
+}
+
+.DetectedPeopleV{
+  overflow-x: hidden;
+  overflow-y: none !important;
+  padding-top: 50px;
+  padding-right: 50px;
+  width: 100%;
+  height: 40vh !important;
+}
+
+
+.legalcuadro{
+  text-align: justify;
+  border : 1px solid #002F44;
+  padding: 15px;
+}
+
+.userphoto{
+  width: 300px;
+  height: 300px;
+  border : 3px solid #4BC6E1;
+  border-radius: 150px;
+}
+
+.numero{
+  font-size:700%;
+  color: #4BC6E1;
+}
+
+.ax_default {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:13px;
+  letter-spacing:normal;
+  color:#333333;
+  vertical-align:none;
+  text-align:center;
+  line-height:normal;
+  text-transform:none;
+}
+.box_1 {
+}
+.image {
+}
+.heading_1 {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:bold;
+  font-style:normal;
+  font-size:32px;
+  text-align:left;
+}
+.heading_2 {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:bold;
+  font-style:normal;
+  font-size:24px;
+  text-align:left;
+}
+.heading_3 {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:bold;
+  font-style:normal;
+  font-size:18px;
+  text-align:left;
+}
+.heading_4 {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:bold;
+  font-style:normal;
+  font-size:14px;
+  text-align:left;
+}
+.heading_5 {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:bold;
+  font-style:normal;
+  text-align:left;
+}
+.heading_6 {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:bold;
+  font-style:normal;
+  font-size:10px;
+  text-align:left;
+}
+.paragraph {
+  text-align:left;
+}
+.droplist {
+  color:#000000;
+  text-align:left;
+}
+.list_box {
+  color:#000000;
+  text-align:left;
+}
+.radio_button {
+  text-align:left;
+}
+.sticky_1 {
+  text-align:left;
+}
+.form_hint {
+  color:#999999;
+}
+.form_disabled {
+}
+.heading_11 {
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial', sans-serif;
+  font-weight:700;
+  font-style:normal;
+  font-size:16px;
+  color:#212529;
+  text-align:left;
+  line-height:18px;
+}
+.heading_21 {
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial', sans-serif;
+  font-weight:700;
+  font-style:normal;
+  font-size:32px;
+  color:#212529;
+  text-align:left;
+  line-height:35px;
+}
+.body_copy {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:16px;
+  color:#212529;
+  text-align:left;
+  line-height:24px;
+}
+.display_1 {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:96px;
+  color:#212529;
+  text-align:left;
+  line-height:106px;
+}
+.display_3 {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:72px;
+  color:#212529;
+  text-align:left;
+  line-height:79px;
+}
+.blockquote_text {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:20px;
+  color:#292B2C;
+  text-align:left;
+  line-height:30px;
+}
+.source {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:16px;
+  color:#868E96;
+  text-align:left;
+  line-height:24px;
+}
+.line {
+}
+.shape {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+}
+.btn_disabled {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+}
+.dropdown_list_item_hover {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+  color:#16181B;
+}
+.dropdown_list_item_active {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+  color:#FFFFFF;
+}
+.dialog_bg {
+}
+.paragraph1 {
+  text-align:left;
+}
+.box_3 {
+}
+.text_button {
+  color:#02A7F0;
+}
+._contained_button {
+  color:#FFFFFF;
+}
+.icon {
+}
+.horizontal_line {
+}
+.text_field {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+  color:#495057;
+  text-align:left;
+}
+.placeholder_text {
+  font-family:'ArialMT', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+  color:#868E96;
+}
+.shape1 {
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial', sans-serif;
+  font-weight:700;
+  font-style:normal;
+  font-size:13px;
+  color:#333333;
+  text-align:center;
+  line-height:normal;
+}
+.text_field1 {
+  color:#000000;
+  text-align:left;
+}
+textarea, select, input, button { outline: none; }
+

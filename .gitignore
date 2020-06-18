@@ -1,0 +1,5 @@
+node_modules
+*pycache*
+video_server/resources
+tests.ipynb
+streaming_server/nginx-1.10.1.tar.gz
