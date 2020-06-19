@@ -5,7 +5,8 @@ FROM node
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 WORKDIR /usr/src/app
-COPY package*.json ./
+
+COPY ./ui/package*.json ./
 
 RUN npm install
 

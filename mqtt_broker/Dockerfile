@@ -5,7 +5,7 @@ FROM node
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 WORKDIR /usr/src/app
-COPY package*.json ./
+COPY ./mqtt_broker/package*.json ./
 
 RUN npm install
 
@@ -15,6 +15,6 @@ EXPOSE 1883
 EXPOSE 3000
 
 #Launch application
-COPY . .
+COPY ./mqtt_broker/. .
 CMD node server.js
 
