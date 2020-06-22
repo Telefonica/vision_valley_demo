@@ -21,7 +21,7 @@ pipeline {
                 dir ("${WORKSPACE}/ui/") {
                     sh '''
                          $(aws ecr get-login --no-include-email)
-                         docker build . -t 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer_vision_front:${CV_VER}
+                         docker build . -t 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer_vision/computer_vision_front:${CV_VER}
                        '''
                 }
              }
@@ -30,7 +30,7 @@ pipeline {
             steps {
                 dir ("${WORKSPACE}/ui/") {
                     sh '''
-                         docker push 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer_vision_front:${CV_VER}
+                         docker push 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer_vision/computer_vision_front:${CV_VER}
                        '''
                }
              }
