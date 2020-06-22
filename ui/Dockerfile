@@ -6,7 +6,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 WORKDIR /usr/src/app
 
-COPY .vision-valley-demo/ui/package*.json ./
+COPY ./vision-valley-demo/ui/package*.json ./
 
 RUN npm install
 
