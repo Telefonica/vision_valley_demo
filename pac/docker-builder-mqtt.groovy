@@ -21,7 +21,7 @@ pipeline {
                 dir ("${WORKSPACE}/mqtt_broker/") {
                     sh '''
                          $(aws ecr get-login --no-include-email)
-                         docker build . -t 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision/computer-vision-mqtt:${CV_VER}
+                         docker build . -t 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-mqtt-${CV_VER}
                        '''
                 }
              }
@@ -30,7 +30,7 @@ pipeline {
             steps {
                 dir ("${WORKSPACE}/mqtt_broker/") {
                     sh '''
-                         docker push 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision/computer-vision-mqtt:${CV_VER}
+                         docker push 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-mqtt-${CV_VER}
                        '''
                }
              }
