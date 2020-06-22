@@ -18,7 +18,7 @@ pipeline {
     stages {
         stage ('build computer vision NGINX server') {
             steps {
-                dir ("${WORKSPACE}/dockers/streaming_server/") {
+                dir ("${WORKSPACE}/streaming_server/") {
                     sh '''
                          $(aws ecr get-login --no-include-email)
                          docker build . -t 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer_vision_nginx:${CV_VER}
@@ -28,7 +28,7 @@ pipeline {
           }
         stage ('push computer vision NGINX to registry') {
             steps {
-                dir ("${WORKSPACE}/dockers/streaming_server/") {
+                dir ("${WORKSPACE}/streaming_server/") {
                     sh '''
                          docker push 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer_vision_nginx:${CV_VER}
                        '''

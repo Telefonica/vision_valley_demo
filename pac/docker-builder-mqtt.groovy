@@ -18,7 +18,7 @@ pipeline {
     stages {
         stage ('build computer vision MQTT') {
             steps {
-                dir ("${WORKSPACE}/dockers/mqtt_broker/") {
+                dir ("${WORKSPACE}/mqtt_broker/") {
                     sh '''
                          $(aws ecr get-login --no-include-email)
                          docker build . -t 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer_vision_mqtt:${CV_VER}
@@ -28,7 +28,7 @@ pipeline {
           }
         stage ('push computer vision MQTT to registry') {
             steps {
-                dir ("${WORKSPACE}/dockers/mqtt_broker/") {
+                dir ("${WORKSPACE}/mqtt_broker/") {
                     sh '''
                          docker push 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer_vision_mqtt:${CV_VER}
                        '''
