@@ -18,7 +18,7 @@ pipeline {
     stages {
         stage ('build computer vision frontend') {
             steps {
-                dir ("${WORKSPACE}/dockers/ui/") {
+                dir ("${WORKSPACE}/ui/") {
                     sh '''
                          $(aws ecr get-login --no-include-email)
                          docker build . -t 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer_vision_front:${CV_VER}
@@ -28,7 +28,7 @@ pipeline {
           }
         stage ('push computer vision front to registry') {
             steps {
-                dir ("${WORKSPACE}/dockers/ui/") {
+                dir ("${WORKSPACE}/ui/") {
                     sh '''
                          docker push 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer_vision_front:${CV_VER}
                        '''
