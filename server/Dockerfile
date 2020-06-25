@@ -25,8 +25,8 @@ EXPOSE 8554
 EXPOSE 8555
 EXPOSE 8556
 
-RUN wget https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/person-detection-retail-0013/FP32/person-detection-retail-0013.bin /home
-RUN wget https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/person-detection-retail-0013/FP16/person-detection-retail-0013.xml /home
+RUN wget https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/person-detection-retail-0013/FP32/person-detection-retail-0013.bin -O /home/person-detection-retail-0013.bin
+RUN wget https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/person-detection-retail-0013/FP16/person-detection-retail-0013.xml -O /home/person-detection-retail-0013.xml
 
 #Launch application
 RUN chmod +x ./run_3_models.sh
