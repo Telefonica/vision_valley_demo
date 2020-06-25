@@ -4,7 +4,7 @@ import os
 from configobj import ConfigObj
 gi.require_version('Gst','1.0')
 from gi.repository import GObject, Gst, GstVideo, GstRtspServer, GstRtsp
-os.environ["GST_DEBUG"] = "3"
+#os.environ["GST_DEBUG"] = "3"
 
 def main(args):
     

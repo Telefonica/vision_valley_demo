@@ -4,7 +4,7 @@ USER root
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
-RUN apt-get update && apt-get install -y gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-libav python3-pip libzmq3-dev libkrb5-dev ffmpeg lsof python3 
+RUN apt-get update && apt-get install -y python3-dev libsm6 libxext6 libxrender-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-libav python3-pip libzmq3-dev libkrb5-dev ffmpeg lsof python3 
 
 #Install python dependencies
 
