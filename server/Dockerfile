@@ -4,7 +4,7 @@ USER root
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
-RUN apt-get update && apt-get install -y python3-dev libsm6 libxext6 libxrender-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-libav python3-pip libzmq3-dev libkrb5-dev ffmpeg lsof python3 
+RUN apt-get update && apt-get install -y python3-dev libsm6 libxext6 libxrender-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-libav python3-pip libzmq3-dev libkrb5-dev ffmpeg lsof python3 wget
 
 #Install python dependencies
 
@@ -23,8 +23,8 @@ EXPOSE 8554
 EXPOSE 8555
 EXPOSE 8556
 
-#Model downloader
-CMD cd /opt/intel/openvino/deployment_tools/tools/model_downloader/ && python3 downloader.py --name person-detection-retail-0013
+RUN wget https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/person-detection-retail-0013/FP32/person-detection-retail-0013.bin /home
+RUN wget https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/person-detection-retail-0013/FP16/person-detection-retail-0013.xml /home
 
 #Launch application
 RUN chmod +x ./run_3_models.sh
