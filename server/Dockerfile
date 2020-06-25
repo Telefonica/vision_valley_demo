@@ -29,4 +29,6 @@ CMD cd /opt/intel/openvino/deployment_tools/tools/model_downloader/ && python3 d
 #Launch application
 RUN source /opt/intel/openvino/bin/setupvars.sh 
 
+RUN chmod +x ./run_3_models.sh
+
 ENTRYPOINT ["./run_3_models.sh"]
