@@ -5,7 +5,7 @@ USER root
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 #RUN apt-get clean && apt-get update && apt-get install -y sudo gstreamer1.0-plugins-base gstreamer1.0-plugins-bad lsof gir1.2-gst-rtsp-server-1.0 python3 python3-pip
-RUN apt-get update && apt-get install -y sudo gstreamer1.0-plugins-base gstreamer1.0-plugins-bad lsof gir1.2-gst-rtsp-server-1.0
+RUN apt-get update && apt-get install -y sudo gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gir1.2-gst-rtsp-server-1.0 pkg-config libcairo2-dev gcc python3-dev libgirepository1.0-dev
 
 
 #Install python dependencies
@@ -22,5 +22,9 @@ EXPOSE 8554
 EXPOSE 8555
 EXPOSE 8556
 
+WORKDIR ./gstreamer/
+
+RUN chmod +x ./launch_3_streams.sh
+
 #Launch application
-CMD python3 rtsp_server_gstreamer.py  -config_path gserver.conf & python3 rtsp_server_gstreamer.py  -config_path gserver2.conf & python3 rtsp_server_gstreamer.py  -config_path gserver3.conf &
+ENTRYPOINT ["./launch_3_streams.sh"]
