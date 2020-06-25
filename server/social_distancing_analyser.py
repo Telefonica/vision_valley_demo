@@ -231,6 +231,8 @@ def main():
         single_image_mode = True
         input_stream = args.input
 
+    output_stream = args.output
+
     # Checks for video file
     else:
         input_stream = args.input
