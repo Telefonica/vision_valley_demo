@@ -151,7 +151,7 @@ def main():
         wk = 33
     else:
         #RTSP stream:
-        gstreamer_pipeline = ('rtspsrc protocols=tcp  location=%s ! queue ! rtph264depay ! h264parse config-interval=-1 ! avdec_h264 ! videoconvert ! appsink sync=false' % (input_stream))
+        gstreamer_pipeline = ('rtspsrc location=%s ! queue ! rtph264depay ! h264parse config-interval=-1 ! avdec_h264 ! videoconvert ! appsink sync=false' % (input_stream))
         wk = 1
     
     cap = cv2.VideoCapture(gstreamer_pipeline, cv2.CAP_GSTREAMER)

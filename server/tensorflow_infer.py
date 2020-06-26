@@ -11,7 +11,7 @@ import logging as log
 import paho.mqtt.client as mqtt
 
 os.environ["OPENCV_VIDEOIO_DEBUG"] = "1"
-os.environ["GST_DEBUG"] = "3"
+os.environ["GST_DEBUG"] = "2"
 
 # MQTT server environment variables
 MQTT_HOST = "0.0.0.0"
