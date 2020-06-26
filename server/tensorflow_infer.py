@@ -14,7 +14,7 @@ os.environ["OPENCV_VIDEOIO_DEBUG"] = "1"
 os.environ["GST_DEBUG"] = "3"
 
 # MQTT server environment variables
-MQTT_HOST = "localhost"
+MQTT_HOST = "0.0.0.0"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 60
 
