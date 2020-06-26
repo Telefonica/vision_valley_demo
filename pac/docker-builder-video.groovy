@@ -21,7 +21,9 @@ pipeline {
                 dir ("${WORKSPACE}/video_server/") {
                     sh '''
                          aws s3 cp s3://computer-vision-5ghack/madrid_covid19_2.mp4 .
+                         openssl sha512 madrid_covid19_2.mp4
                          aws s3 cp s3://computer-vision-5ghack/TownCentre.mp4 .
+                         openssl sha512 TownCentre.mp4
                          $(aws ecr get-login --no-include-email)
                          docker build . -t 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-video-${CV_VER}
                        '''
