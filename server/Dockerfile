@@ -1,5 +1,4 @@
-FROM openvino/ubuntu18_runtime:2019_R3.1
-
+FROM openvino/ubuntu18_runtime:latest
 USER root
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
