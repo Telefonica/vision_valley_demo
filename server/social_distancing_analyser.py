@@ -252,6 +252,9 @@ def main():
     cap = cv2.VideoCapture(gstreamer_pipeline, cv2.CAP_GSTREAMER)
 
     gstreamer_out = ("appsrc ! videoconvert ! x264enc tune=zerolatency bitrate=5000 tune=zerolatency speed-preset=ultrafast ! flvmux streamable=true ! rtmpsink location='%s live=1'"  % (output_stream))
+
+    fps = args.fps
+    out = cv2.VideoWriter(gstreamer_out, -1, fps, (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))), True)
     
 
     if not cap.isOpened():

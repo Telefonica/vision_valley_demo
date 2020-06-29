@@ -13,7 +13,7 @@ pipeline {
         GIT_REPONAME = 'vision_valley_demo'
         AWS_DEFAULT_REGION = 'eu-west-3'
         AWS_DEFAULT_OUTPUT = 'json'
-        CV_VER = '2.1'
+        CV_VER = '2.2'
     }
     stages {
         stage ('build computer vision backend') {
