@@ -123,7 +123,8 @@ def run_on_video(video_path, output_stream, conf_thresh, fps):
     else:
         #RTSP stream:        
         #gstreamer_pipeline =('rtspsrc udp-buffer-size=655360 location=%s  ! queue max-size-time=100000000 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! appsink sync=false async=false' % (video_path))
-        gstreamer_pipeline = ('rtspsrc location=%s protocols=1 udp-buffer-size=4294967295 latency=200 ! rtph264depay ! h264parse config-interval=-1 ! avdec_h264 ! videoconvert ! appsink sync=false' % (video_path))
+        #gstreamer_pipeline = ('rtspsrc location=%s protocols=1 udp-buffer-size=4294967295 latency=200 ! rtph264depay ! h264parse config-interval=-1 ! avdec_h264 ! videoconvert ! appsink sync=false' % (video_path))
+        gstreamer_pipeline = ('rtspsrc location=%s udp-buffer-size=4294967295 latency=200 ! rtph264depay ! h264parse config-interval=-1 ! avdec_h264 ! videoconvert ! appsink sync=false' % (video_path))
         #gstreamer_pipeline = ('rtspsrc protocols=tcp location=%s latency=0 ! application/x-rtp, payload=96, bitrate=5000, encoding-name=H264 ! rtpjitterbuffer ! rtph264depay ! h264parse config-interval=-1 ! avdec_h264  ! videoconvert ! appsink sync=false' % (video_path))
         #gstreamer_pipeline = ('rtspsrc protocols=tcp location=%s ! rtpjitterbuffer max-rtcp-rtp-time-diff=100 drop-on-latency=true ts-offset=100 ! rtph264depay ! h264parse config-interval=-1 ! avdec_h264 output-corrupt=false skip-frame=2  ! videoconvert ! appsink sync=false' % (video_path))
         #gstreamer_pipeline = ('rtspsrc protocols=tcp location=%s ! application/x-rtp, media=video, encoding-name=H264 ! rtph264depay ! h264parse config-interval=-1 ! avdec_h264 output-corrupt=false skip-frame=2 max-threads=3 ! videoconvert ! appsink sync=false' % (video_path))

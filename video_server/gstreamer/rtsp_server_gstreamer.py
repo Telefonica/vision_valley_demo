@@ -32,8 +32,8 @@ def main(args):
     factory = GstRtspServer.RTSPMediaFactory()
     factory.set_launch('filesrc location =%s ! qtdemux ! h264parse config-interval=-1 ! rtph264pay pt=96 config-interval=-1 name=pay0' % (file_location))
     factory.set_shared(True)
-    factory.set_buffer_size(4294967295)
-    factory.set_protocols(GstRtsp.RTSPLowerTrans(1))
+    #factory.set_buffer_size(4294967295)
+    #factory.set_protocols(GstRtsp.RTSPLowerTrans(1))
     #factory.set_transport_mode(GstRtspServer.RTSPTransportMode.PLAY)
 
     mounts.add_factory(factory_name, factory)
