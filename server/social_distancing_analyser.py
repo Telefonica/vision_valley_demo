@@ -253,7 +253,7 @@ def main():
 
     gstreamer_out = ("appsrc ! videoconvert ! x264enc tune=zerolatency bitrate=5000 tune=zerolatency speed-preset=ultrafast ! flvmux streamable=true ! rtmpsink location='%s live=1'"  % (output_stream))
 
-    fps = args.fps
+    fps = int(args.fps)
     out = cv2.VideoWriter(gstreamer_out, -1, fps, (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))), True)
     
 

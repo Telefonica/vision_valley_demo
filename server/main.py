@@ -178,7 +178,7 @@ def main():
     #gstreamer_out = ("appsrc ! h264parse ! flvmux streamable=true ! rtmpsink location='%s'" % (output_stream))
 
     #fcc = cv2.VideoWriter_fourcc(*'X264')
-    fps = args.fps
+    fps = int(args.fps)
     out = cv2.VideoWriter(gstreamer_out, -1, fps, (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))), True)
 
     if not cap.isOpened():

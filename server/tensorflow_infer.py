@@ -191,7 +191,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     video_path = args.input
     output_video = args.output
-    fps = args.fps
+    fps = int(args.fps)
     if args.input == '0':
         video_path = 0
     run_on_video(video_path, output_video, 0.5, fps)
