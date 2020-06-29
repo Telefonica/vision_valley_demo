@@ -13,7 +13,7 @@ from argparse import ArgumentParser
 from inference import Network
 
 # MQTT server environment variables
-MQTT_HOST = "0.0.0.0"
+MQTT_HOST = "127.0.0.1"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 60
 
