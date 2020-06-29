@@ -305,12 +305,12 @@ def main():
                 break
 
         # Send frame to the ffmpeg server
-        sys.stdout.buffer.write(frame)  
-        sys.stdout.flush()
+        out.write(frame)
 
         if single_image_mode:
             cv2.imwrite('output_image.jpg', frame)
     cap.release()
+    out.release()
     cv2.destroyAllWindows()
     client.disconnect()
     infer_network.clean()
