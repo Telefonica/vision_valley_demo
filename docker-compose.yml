@@ -1,0 +1,22 @@
+version: '2.2'
+services:
+  mqtt:
+    build: ./mqtt_broker
+    ports:
+      - "3000:3000" 
+      - "1883:1883"   
+    network_mode: host
+  nginx:
+    build: ./streaming_server
+    network_mode: host
+  video:
+    build: ./video_server
+    network_mode: host
+  front:
+    build: ./ui
+    ports:
+      - "8080:8080"
+    network_mode: host
+  back:
+    build: ./server
+    network_mode: host
