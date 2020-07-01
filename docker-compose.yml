@@ -2,16 +2,21 @@ version: '2.2'
 services:
   mqtt:
     image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-mqtt-3.0
+    ports:
+      - "3000:3000" 
+      - "1883:1883"   
     network_mode: host
   nginx:
     image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-nginx-3.0
     network_mode: host
   video:
-    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-video-3.1
+    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-video-3.0
     network_mode: host
   front:
-    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-front-3.1
+    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-front-3.0
+    ports:
+      - "8080:8080"
     network_mode: host
   back:
-    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-back-3.1
+    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-back-3.0
     network_mode: host
