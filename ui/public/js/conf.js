@@ -5,7 +5,7 @@ var CONF = {
 }
 
 var MQTT = {
-	SERVER : "localhost",
+	SERVER : "0.0.0.0",
     PORT : "3000",
     TOPIC_PERSON:"person",
     TOPIC_TIME_INFERENCE:"person/inference",
