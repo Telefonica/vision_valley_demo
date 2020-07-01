@@ -1,22 +1,17 @@
 version: '2.2'
 services:
   mqtt:
-    build: ./mqtt_broker
-    ports:
-      - "3000:3000" 
-      - "1883:1883"   
+    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-mqtt-3.0
     network_mode: host
   nginx:
-    build: ./streaming_server
+    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-nginx-3.0
     network_mode: host
   video:
-    build: ./video_server
+    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-video-3.1
     network_mode: host
   front:
-    build: ./ui
-    ports:
-      - "8080:8080"
+    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-front-3.1
     network_mode: host
   back:
-    build: ./server
+    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-back-3.1
     network_mode: host
