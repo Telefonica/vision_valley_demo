@@ -33,6 +33,7 @@ def main(args):
     factory.set_launch('filesrc location =%s ! qtdemux ! h264parse config-interval=-1 ! rtph264pay pt=96 config-interval=-1 name=pay0' % (file_location))
     factory.set_shared(True)
     factory.set_buffer_size(4294967295)
+
     #factory.set_protocols(GstRtsp.RTSPLowerTrans(1))
     #factory.set_transport_mode(GstRtspServer.RTSPTransportMode.PLAY)
 
@@ -42,6 +43,12 @@ def main(args):
 
     print("Stream ready at rtsp://%s:%s%s" % (rstp_host, rstp_port, factory_name))
     mainloop.run()
+
+    while mainloop.is_running():
+        sleep(0.1)
+
+    
+    factory.set_suspend_mode(2)
 
 if __name__ == '__main__':
     

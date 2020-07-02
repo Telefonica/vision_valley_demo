@@ -1,4 +1,5 @@
 var CONF = {
+    RENDERING_IP : "192.168.50.35",
     VIDEO_FEED_PEOPLE : "http://192.168.50.35:8090/crowd/stream.m3u8",
     VIDEO_FEED_MASK : "http://192.168.50.35:8090/mask/stream.m3u8",
     VIDEO_FEED_DISTANCE : "http://192.168.50.35:8090/dist/stream.m3u8"
