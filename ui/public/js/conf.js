@@ -1,11 +1,11 @@
 var CONF = {
-    VIDEO_FEED_PEOPLE : "http://localhost:8090/crowd/stream.m3u8",
-    VIDEO_FEED_MASK : "http://localhost:8090/mask/stream.m3u8",
-    VIDEO_FEED_DISTANCE : "http://localhost:8090/dist/stream.m3u8"
+    VIDEO_FEED_PEOPLE : "http://192.168.50.35:8090/crowd/stream.m3u8",
+    VIDEO_FEED_MASK : "http://192.168.50.35:8090/mask/stream.m3u8",
+    VIDEO_FEED_DISTANCE : "http://192.168.50.35:8090/dist/stream.m3u8"
 }
 
 var MQTT = {
-	SERVER : "localhost",
+	SERVER : "192.168.50.35",
     PORT : "3000",
     TOPIC_PERSON:"person",
     TOPIC_TIME_INFERENCE:"person/inference",

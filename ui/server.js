@@ -11,5 +11,5 @@ app.set('views', __dirname + '/views');
 app = config(app);
 
 http.listen(app.get('port'), function(){
-	console.log('Server up: http://localhost:' + app.get('port'));
+	console.log('Server up: http://192.168.50.35:' + app.get('port'));
 });

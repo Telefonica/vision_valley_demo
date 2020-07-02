@@ -13,7 +13,7 @@ services:
     image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-video-3.0
     network_mode: host
   front:
-    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-front-3.0
+    image: 709233559969.dkr.ecr.eu-west-3.amazonaws.com/computer-vision:computer-vision-front-4.0
     ports:
       - "8080:8080"
     network_mode: host
